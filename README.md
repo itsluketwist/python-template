@@ -1,6 +1,9 @@
 # **python-template**
 
 
+![check code workflow](https://github.com/itsluketwist/python-template/actions/workflows/check.yaml/badge.svg)
+
+
 <div>
     <!-- badges from : https://shields.io/ -->
     <!-- logos available : https://simpleicons.org/ -->
@@ -67,7 +70,7 @@ pre-commit run --all-files
 
 ## *todos*
 
-- add a basic github workflow
+- Add docs template / support.
 
 
 ## *testing*
