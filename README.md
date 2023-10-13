@@ -8,10 +8,10 @@
     <!-- badges from : https://shields.io/ -->
     <!-- logos available : https://simpleicons.org/ -->
     <a href="https://opensource.org/licenses/MIT">
-        <img alt="MIT License" src="https://img.shields.io/badge/Licence-MIT-730000?style=for-the-badge&logo=docs&logoColor=white" />
+        <img alt="MIT License" src="https://img.shields.io/badge/Licence-MIT-yellow?style=for-the-badge&logo=docs&logoColor=white" />
     </a>
     <a href="https://www.python.org/">
-        <img alt="Python 3" src="https://img.shields.io/badge/Python_3-37709F?style=for-the-badge&logo=python&logoColor=white" />
+        <img alt="Python 3" src="https://img.shields.io/badge/Python_3-blue?style=for-the-badge&logo=python&logoColor=white" />
     </a>
 </div>
 
