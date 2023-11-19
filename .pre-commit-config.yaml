@@ -20,6 +20,7 @@ repos:
     rev: '23.9.1'
     hooks:
     -   id: black
+    # -   id: black-jupyter
 # autoflake
 -   repo: https://github.com/myint/autoflake
     rev: v2.2.1
