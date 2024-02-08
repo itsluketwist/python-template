@@ -1,6 +1,12 @@
+# Package specification, as defined here:
+# https://packaging.python.org/en/latest/specifications/pyproject-toml/#pyproject-toml-spec
+
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools", "setuptools-git-versioning<2"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools-git-versioning]
+enabled = true
 
 [tool.setuptools]
 packages = ["src"]
@@ -8,6 +14,7 @@ packages = ["src"]
 [project]
 name = "python_template"
 version = "0.0.0"
+# dynamic = ["version"]
 description = "python-template..."
 readme = "README.md"
 authors = [{ name = "Lukas Twist", email = "itsluketwist@gmail.com" }]

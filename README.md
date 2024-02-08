@@ -2,6 +2,7 @@
 
 
 ![check code workflow](https://github.com/itsluketwist/python-template/actions/workflows/check.yaml/badge.svg)
+![release workflow](https://github.com/itsluketwist/python-template/actions/workflows/release.yaml/badge.svg)
 
 
 <div>
