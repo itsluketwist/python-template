@@ -1,7 +1,8 @@
 # **python-template**
 
 
-![check code workflow](https://github.com/itsluketwist/python-template/actions/workflows/check.yaml/badge.svg)
+![lint code workflow](https://github.com/itsluketwist/python-template/actions/workflows/lint.yaml/badge.svg)
+![test code workflow](https://github.com/itsluketwist/python-template/actions/workflows/test.yaml/badge.svg)
 ![release workflow](https://github.com/itsluketwist/python-template/actions/workflows/release.yaml/badge.svg)
 
 
@@ -20,7 +21,7 @@
 ## *usage*
 
 Once cloned, find and replace all instances of `python-template` with the new repository name.
-Remove below `README.md` sections where appropriate (whether this is a project or library), 
+Remove below `README.md` sections where appropriate (whether this is a project or library),
 similarly determine whether the `pyproject.toml` or `requirements.txt` files are necessary.
 
 ## *installation*
@@ -42,24 +43,24 @@ git clone https://github.com/itsluketwist/python-template.git
 _(for projects...)_ Once cloned, install the requirements locally in a virtual environment:
 
 ```shell
-python -m venv venv
+python -m venv .venv
 
 . venv/bin/activate
 
-pip install -r requirements-dev.txt
+pip install -r requirements.txt requirements-dev.txt
 ```
 
 _(for libraries...)_ Once cloned, install the package locally in a virtual environment:
 
 ```shell
-python -m venv venv
+python -m venv .venv
 
 . venv/bin/activate
 
 pip install -e ".[dev]"
 ```
 
-Install and use pre-commit to ensure code is in a good state:
+Install and use pre-commit to ensure code is in a good state (uses [ruff](https://astral.sh/ruff)):
 
 ```shell
 pre-commit install
@@ -67,6 +68,12 @@ pre-commit install
 pre-commit autoupdate
 
 pre-commit run --all-files
+```
+
+Dependencies are managed with [uv](https://astral.sh/blog/uv), add new packages to `requirements.in`, then compile:
+
+```shell
+uv pip compile requirements.in -o requirements.txt
 ```
 
 ## *todos*
