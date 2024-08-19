@@ -45,9 +45,9 @@ _(for projects...)_ Once cloned, install the requirements locally in a virtual e
 ```shell
 python -m venv .venv
 
-. venv/bin/activate
+. .venv/bin/activate
 
-pip install -r requirements.txt requirements-dev.txt
+pip install -r requirements.txt -r requirements-dev.txt
 ```
 
 _(for libraries...)_ Once cloned, install the package locally in a virtual environment:
@@ -55,7 +55,7 @@ _(for libraries...)_ Once cloned, install the package locally in a virtual envir
 ```shell
 python -m venv .venv
 
-. venv/bin/activate
+. .venv/bin/activate
 
 pip install -e ".[dev]"
 ```
