@@ -1,5 +1,9 @@
 # simple make file for common commands
 
+new: newvenv newlint
+
+check: lint test
+
 newvenv:
 	python -m venv .venv
 	. venv/bin/activate
@@ -13,3 +17,9 @@ compile:
 
 lint:
 	pre-commit run --all-files
+
+test:
+	pytest tests
+
+coverage:
+	pytest --cov=src/ tests/
